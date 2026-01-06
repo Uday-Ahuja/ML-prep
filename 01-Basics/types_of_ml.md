@@ -5,7 +5,7 @@
 
 ---
 
-## Classification by Application/Theory
+## Classification by Application/Theory or supervision
 
 ### 1. Supervised Learning
 - **Regression:** Predict continuous numerical values
@@ -172,7 +172,13 @@
 - Limited memory/storage
 
 **Example:** Stock price prediction, spam filters that adapt to new spam patterns
-
+**libraries:** skleran(SGD regressor),River, Vowpal Wabbit etc
+**Learning Rate:**
+- Means how frequently you want to train the data
+- Important for efficiency of the model since too frequent learning can decrease efficiency of the model.
+- Forgets past data and learns the new one so learning rate should pace with changing trends ie shall not be too fast nor too slow.
+  
+  
 ---
 
 ## Summary
