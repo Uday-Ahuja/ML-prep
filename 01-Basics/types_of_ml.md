@@ -1,7 +1,6 @@
 # Types of Machine Learning
 
-**Source:** CampusX 100 Days of ML
-**Date:** January 3, 2026
+**Study Source:** CampusX 100 Days of ML
 
 ---
 
@@ -37,6 +36,12 @@
 - Gender
 - Nationality
 - Yes/No labels
+
+## Types of Learning
+### Memorizing
+- Learning by storing exact instances of data and recalling them when needed.
+### Generalizing
+- Learning by extracting patterns or rules from data, enabling predictions on unseen examples.
 
 ---
 
@@ -177,10 +182,34 @@
 - Means how frequently you want to train the data
 - Important for efficiency of the model since too frequent learning can decrease efficiency of the model.
 - Forgets past data and learns the new one so learning rate should pace with changing trends ie shall not be too fast nor too slow.
-  
-  
----
 
+**Out of Core Learning:**
+- Done offline but techniques of online ML are used
+- Wen you have large dataset which cannot directly be used to train the model
+- Data is broken/divided into smaller datasets and then those small datasets one-by-one are used to train the model
+  
+**Disadvantages:**
+- Tricky : Because of multiple variables (learning speed, data processing on server)
+- Risky : if someone controls the incoming data the model should be taken down from server to protect model being biased etc (anomaly detection could be used to protect model from such risks)
+
+---
+## Ways of learning
+### Instance Based Learning:
+- Follows the memorizing approach.
+- The model stores training data and makes predictions based on similarity to stored instances.
+- Example: K-Nearest Neighbors (KNN) – predicts output based on the distance between points.
+- Characteristics:
+      - Requires storing training data → higher memory usage.
+      - No explicit model is formed; all reasoning happens at query time.
+### Model Based Learning:
+- Follows the generalizing approach.
+- The model tries to learn underlying patterns and represent them as a function or rule.
+- Mechanism: Creates a mathematical function (decision function/boundary) to predict outputs logically rather than by just comparing points.
+- Advantages:
+    - Can discard training data after learning → lower memory usage.
+    - Decisions are based on the learned function, not raw data.
+- Examples: Linear Regression, Logistic Regression, Decision Tree.
+--- 
 ## Summary
 
 **Supervised vs Unsupervised:**
